@@ -21,7 +21,7 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
     public HashMap<Node, Double> gVals;
     public HashMap<Node, Double> fVals;
 
-
+    public boolean hasPath = false;
 
 
     public ResultImpl(int startNodeId, int endNodeId,GraphImpl g) {
@@ -36,7 +36,17 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
         closedSet = new HashSet<Node>();
         gVals = new HashMap<Node, Double>();
         fVals = new HashMap<Node, Double>();
+        setFVals();
         astar();
+    }
+
+    private void setFVals(){
+        Iterator it = graph.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<Integer,Node> pair = (Map.Entry)it.next();
+            pair.getValue().setFs(calcDistance(pair.getValue(),end));
+            fVals.put(pair.getValue(),Double.POSITIVE_INFINITY);
+        }
     }
 
     private void astar(){
@@ -59,13 +69,8 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
 
             for(Map.Entry<Node, Integer> neighbor : neighbors.entrySet()){
                 Node tmpNeighbor = neighbor.getKey();
-                System.out.println(tmpNeighbor.toString());
-                System.out.println(current.toString());
-                System.out.println(calcDistance(current,tmpNeighbor));
                 double gScore = gVals.get(current) + calcDistance(current,tmpNeighbor);
-                double fScore = gScore + heuristicFunction(tmpNeighbor,current);
-
-                System.out.println(tmpNeighbor.getId() + " " + gScore + " " + fScore + " " + gVals.get(current) + " " + calcDistance(current,tmpNeighbor));
+                double fScore = gScore + heuristicFunction(tmpNeighbor,end);
 
                 if(closedSet.contains(tmpNeighbor)){
                     if(gVals.get(tmpNeighbor)==null){ gVals.put(tmpNeighbor,gScore);}
@@ -73,7 +78,7 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
                     if(fScore >= fVals.get(tmpNeighbor)){ continue; }
                 }
 
-                if(openSet.contains(tmpNeighbor) || fScore < fVals.get(tmpNeighbor)){
+                if((openSet.contains(tmpNeighbor) || fScore < fVals.get(tmpNeighbor))&&!closedSet.contains(tmpNeighbor)){
                     tmpNeighbor.setParent(current);
                     gVals.put(tmpNeighbor,gScore);
                     fVals.put(tmpNeighbor,fScore);
@@ -87,20 +92,25 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
     }
 
     private double heuristicFunction(Node i1, Node i2){
+        //return calcDistance(i1,i2);
         return 0;
     }
 
     private void printPath(Node node) {
-        System.out.println(node.getData());
-
+        hasPath = true;
+        resultPath.add(node.getId());
+        //System.out.println(node.toString());
         while (node.getParent() != null) {
             travelDistanceOfResultPath+=calcDistance(node,node.getParent());
             travelTimeOfResultPath+=calcDistance(node,node.getParent())/(node.getParent().getNeighbors().get(node));
             node = node.getParent();
+            //System.out.println(node.toString());
             resultPath.add(node.getId());
         }
-        resultPath.add(node.getParent().getId()); //az első elemet is belekell tenni
 
+
+        Collections.reverse(resultPath);
+        System.out.println("Start: "+resultPath.get(0)+"\nEnd: "+resultPath.get(resultPath.size()-1)+"\nDistance: "+travelDistanceOfResultPath+  "\nTime: "+ travelTimeOfResultPath);
     }
 
     private double calcDistance(Node i1, Node i2) {
@@ -128,7 +138,7 @@ public class ResultImpl implements DistanceResult, TimeResult, Result {
 class NodeComparator implements Comparator<Node>{
     @Override
     public int compare(Node o1, Node o2) {
-        if(o1.getId()>o2.getId()) return 1;
+        if(o1.getFs()>o2.getFs()) return 1;
         else return -1;
     }
 }

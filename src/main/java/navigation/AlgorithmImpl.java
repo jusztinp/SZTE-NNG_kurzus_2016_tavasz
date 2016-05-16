@@ -5,30 +5,32 @@ package navigation;
  * during the unit tests.
  */
 public class AlgorithmImpl implements Algorithm {
+    private GraphImpl g;
 
-	@Override
-	public void preprocess(Graph graph) {
-		// TODO Auto-generated method stub
+    @Override
+    public void preprocess(Graph graph) {
+        g = (GraphImpl) graph;
+    }
 
-	}
+    @Override
+    public DistanceResult findShortestPath(int startNodeId,
+                                           int destinationNodeId) {
+        ResultImpl distanceResult = new ResultImpl(startNodeId, destinationNodeId, g);
 
-	@Override
-	public DistanceResult findShortestPath(int startNodeId,
-			int destinationNodeId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+        return distanceResult;
+    }
 
-	@Override
-	public TimeResult findFastestPath(int startNodeId, int destinationNodeId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public TimeResult findFastestPath(int startNodeId, int destinationNodeId) {
+        ResultImpl timeResult = new ResultImpl(startNodeId, destinationNodeId, g);
 
-	@Override
-	public boolean hasPath(int startNodeId, int destinationNodeId) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+        return timeResult;
+    }
+
+    @Override
+    public boolean hasPath(int startNodeId, int destinationNodeId) {
+        ResultImpl isLegit = new ResultImpl(startNodeId,destinationNodeId,g);
+        return isLegit.hasPath;
+    }
 
 }

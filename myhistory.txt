@@ -1,0 +1,346 @@
+    1  ls
+    2  git log
+    3  mkdir Alma
+    4  cd ./Alma
+    5  ls
+    6  ls -r
+    7  clear
+    8  git checkout
+    9  git init
+   10  git checkout
+   11  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+   12  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+   13  git remote -v
+   14  git pull upstream
+   15  gradlew
+   16  run gradlew
+   17  ./gradlew
+   18  start gradlew
+   19  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz
+   20  git log
+   21  git pull palszak
+   22  git branch * master
+   23  git branch * 
+   24  git branch
+   25  git checkout
+   26  ls
+   27  cd SZTE-NNG_kurzus_2016_tavasz/
+   28  ls
+   29  cd ..
+   30  cd ..
+   31  rm -f ./Alma
+   32  rm -rf ./Alma
+   33  ls
+   34  mkdir Alma
+   35  ls
+   36  cd Alma
+   37  ls
+   38  ls
+   39  mkdir Alma
+   40  cd ./Alma
+   41  ls
+   42  git init
+   43  get remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+   44  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+   45  git pull palszak
+   46  git checkout -b unicorn-pat
+   47  git checkout -b unicorn-pat palszak/unicorn-pat
+   48  git branch master * unicorn-pat
+   49  ls
+   50  cd ..
+   51  ls
+   52  sudo rm -rf ./Alma
+   53  rm -rf ./Alma
+   54  ls
+   55  ls
+   56  mkdir Alma
+   57  cd ./Alma
+   58  git init
+   59  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+   60  git pull palszak
+   61  git checkout -b unicorn-pat palszak/unicorn-pat
+   62  git dif
+   63  git diff
+   64  git log
+   65  ls
+   66  javac MagicalLand.java
+   67  git status
+   68  git add .
+   69  git status
+   70  git commit -m"Orul a paci"
+   71  git status
+   72  git branch
+   73  git checkout master
+   74  git checkout unicorn-pat
+   75  git status
+   76  git add -u
+   77  git add --all
+   78  git status
+   79  git push origin unicorn-pat 
+   80  cd ..
+   81  ls
+   82  cd Korte
+   83  mkdir Korta
+   84  cd ./Korta
+   85  git init
+   86  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+   87  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+   88  git remote -v
+   89  git status
+   90  git pull upstream
+   91  git remote add zsmagyar https://github.com/zsmagyar/SZTE-NNG_kurzus_2016_tavasz.git
+   92  git pull zsmagyar
+   93  ls
+   94  git diff
+   95  git status
+   96  git add .
+   97  git status
+   98  git commit -m"HoC s03e08"
+   99  git branch
+  100  rm -rf Alma
+  101  rm -rf Korta
+  102  mkdir Cseresznye
+  103  cd  Cseresznye
+  104  git clone https://github.com/zsmagyar/SZTE-NNG_kurzus_2016_tavasz.git
+  105  git pull
+  106  git diff
+  107  ls
+  108  cd SZTE-NNG_kurzus_2016_tavasz/
+  109  git diff
+  110  git pull
+  111  git diff
+  112  git add .
+  113  git commmit -m"Egyszer majd talan megerted"
+  114  git commit -m"Egyszer majd talan megerted"
+  115  git status
+  116  git push origin master
+  117  rm -rf Cseresznye
+  118  cd ..
+  119  cd ..
+  120  rm -rf Cseresznye
+  121  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  122  git diff
+  123  cd SZTE-NNG_kurzus_2016_tavasz/
+  124  git diff
+  125  git status
+  126  git pull
+  127  git diff
+  128  git add .
+  129  git commit -m"FirstAdd"
+  130  git push
+  131  cd ..
+  132  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  133  mkdir Dinnye
+  134  cd Dinnye/
+  135  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  136  $ git remote add upstream
+  137  $ git remote add upstream
+  138  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  139  $ git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  140  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  141  ls
+  142  cd SZTE-NNG_kurzus_2016_tavasz/
+  143  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  144  git remote -v
+  145  git pull upstream
+  146  git checkout master
+  147  git rebase upstream/master
+  148  git status
+  149  git diff
+  150  git add .
+  151  git diff
+  152  git pull upstream
+  153  git push -f origin master
+  154  git diff
+  155  git add .
+  156  git commit -m"a"
+  157  git push
+  158  git pull upstream
+  159  git remote -v
+  160  git pull origin master
+  161  cd ..
+  162  cd ..
+  163  rm -rf Dinnye
+  164  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  165  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  166  cd SZTE-NNG_kurzus_2016_tavasz/
+  167  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  168  git remote -v
+  169  git pull upstream
+  170  git pull upstream master 
+  171  git pull upstream HEAD  
+  172  ls
+  173  git pull upstream branch 
+  174  git pull upstream
+  175  git revert master
+  176  git diff
+  177  git status
+  178  git push
+  179  git reset --hard e1715ce26f7a0144f01e5ff0487ce81dd4bbd471
+  180  git diff
+  181  git status
+  182  git push
+  183  git branch
+  184  git pull
+  185  git pull https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git master
+  186  git diff
+  187  git branch
+  188  git pull upstream
+  189  git pull master/upstream
+  190  git revert 
+  191  git revert master
+  192  git revert master
+  193  git revert master
+  194  git fetch
+  195  ls
+  196  git fetch upstream
+  197  ls
+  198  git diff
+  199  git pull upstream
+  200  git init
+  201  cd ..
+  202  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  203  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  204  cd SZTE-NNG_kurzus_2016_tavasz/
+  205  ls
+  206  git add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  207  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  208  git remote -v
+  209  git pull upstream
+  210  git pull upstream master
+  211  git pull master upstream
+  212  git pull master
+  213  git pull upstream
+  214  cd ..
+  215  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  216  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  217  ls
+  218  cd SZTE-NNG_kurzus_2016_tavasz/
+  219  git remote add upstream https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  220  git remote -v
+  221  git diff
+  222  git add .
+  223  git commit -m"Solved szorgalmi:O"
+  224  git push
+  225  git merge
+  226  git pull
+  227  git status
+  228  ls
+  229  cd Alma
+  230  ls
+  231  git status
+  232  cd ..
+  233  rm -rf Alma
+  234  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz
+  235  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  236  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz
+  237  cd SZTE-NNG_kurzus_2016_tavasz/
+  238  ls
+  239  cd src/
+  240  ls
+  241  cd main/
+  242  ls
+  243  cd java/
+  244  ls
+  245  cd ..
+  246  cd ..
+  247  cd ..
+  248  ls
+  249  git status
+  250  git branch
+  251  git branch unicorn-pat origin/unicorn-pat
+  252  git branch
+  253  git checkout unicorn-pat
+  254  git diff
+  255  git pull unicorn-pat
+  256  git remote add upstream https://github.com/PalSzak/SZTE-NNG_kurzus_2016_tavasz.git
+  257  git remote -v
+  258  git pull upstream
+  259  ls
+  260  cd src/main/java/
+  261  ls
+  262  cd ..
+  263  cd ..
+  264  cd ..
+  265  cd ..
+  266  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  267  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz
+  268  cd SZTE-NNG_kurzus_2016_tavasz/
+  269  ls
+  270  git branch
+  271  cd ..
+  272  git clone 
+  273  git clone 
+  274  git clone 
+  275  git clone
+  276  rm -rm SZTE-NNG_kurzus_2016_tavasz/
+  277  rm -rf SZTE-NNG_kurzus_2016_tavasz/
+  278  ls
+  279  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz
+  280  git branch
+  281  cd SZTE-NNG_kurzus_2016_tavasz/
+  282  git branch
+  283  cd ..
+  284  mkdir Alma
+  285  cd Alma
+  286  git init
+  287  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+  288  git pull palszak
+  289  git checkout -b unicorn-pat palszak/unicorn-pat
+  290  ls
+  291  branch
+  292  git branch
+  293  ls
+  294  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  295  ls
+  296  cd SZTE-NNG_kurzus_2016_tavasz/
+  297  ls
+  298  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+  299  git remote -v
+  300  git pull palszak
+  301  git checkout -b unicorn-pat palszak/unicorn-pat
+  302  git checkout master
+  303  git branch
+  304  git merge unicorn-pat
+  305  git diff
+  306  git log
+  307  git add .
+  308  git commit
+  309  git commit -m"Unikorn is"
+  310  git push
+  311  git push
+  312  git push
+  313  git diff
+  314  git add .
+  315  git commit
+  316  git push
+  317  ls
+  318  makedir April
+  319  mkdir april
+  320  cd april
+  321  ls
+  322  git diff
+  323  history
+  324  history > myhistory.txt
+  325  git clone https://github.com/jusztinp/SZTE-NNG_kurzus_2016_tavasz.git
+  326  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz.git
+  327  git remote add palszak https://github.com/Palszak/SZTE-NNG_kurzus_2016_tavasz
+  328  git diff
+  329  git log
+  330  ls
+  331  cd SZTE-NNG_kurzus_2016_tavasz/
+  332  git log
+  333  git diff
+  334  git pull
+  335  git push origin master
+  336  git push origin master
+  337  git status
+  338  git branch
+  339  git checkout
+  340  git remote add nng https://github.com/NNGSzegedAndUSzegedCollaboration/SZTE-NNG_kurzus_2016_tavasz.git
+  341  git checkout master
+  342  git pull nng master
+  343  git diff
+  344  git status
+  345  git push
+  346  history > myhistory.txt
