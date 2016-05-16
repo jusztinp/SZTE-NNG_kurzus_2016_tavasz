@@ -41,42 +41,42 @@ public class NavigationTest {
 	
 	@Test
 	public void shortestPathTest01() {
-		shortestPathTest(3493, 3494, 10200.0);
+		shortestPathTest(3493, 3494, 9467.7293);
 	}
 
 	@Test
 	public void shortestPathTest02() {
-		shortestPathTest(15917, 292, 12821.0);
+		shortestPathTest(15917, 292, 12160.7214);
 	}
 	
 	@Test
 	public void shortestPathTest03() {
-		shortestPathTest(23430, 34446, 2675.0);
+		shortestPathTest(23430, 34446, 2426.7215);
 	}
 	
 	@Test
 	public void shortestPathTest04() {
-		shortestPathTest(6653, 12152, 903.0);
+		shortestPathTest(6653, 12152, 780.6875);
 	}
 	
 	@Test
 	public void fastestPathTest01() {
-		fastestPathTest(3493, 3494, 137.0);
+		fastestPathTest(3493, 3494, 116.7780);
 	}
 
 	@Test
 	public void fastestPathTest02() {
-		fastestPathTest(15917, 292, 165.0);
+		fastestPathTest(15917, 292, 148.5705);
 	}
 	
 	@Test
 	public void fastestPathTest03() {
-		fastestPathTest(23430, 34446, 50.0);
+		fastestPathTest(23430, 34446, 42.6815);
 	}
 	
 	@Test
 	public void fastestPathTest04() {
-		fastestPathTest(6653, 12152, 20.0);
+		fastestPathTest(6653, 12152, 17.0211);
 	}
 	
 	private void shortestPathTest(final int startNodeId, final int destinationNodeId,
@@ -106,7 +106,7 @@ public class NavigationTest {
 			int startNodeId, int destinationNodeId, double distanceOptimum) {
 		assertNotNull(result);
 		assertPathValid(result.getResultPath(), startNodeId, destinationNodeId);
-		assertTrue(isValueInInterval(0.95 * distanceOptimum,
+		assertTrue(isValueInInterval(0.5 * distanceOptimum,
 				result.getTravelDistanceOfResultPath(), 2.0 * distanceOptimum));
 	}
 
@@ -114,7 +114,7 @@ public class NavigationTest {
 			int destinationNodeId, double timeOptimum) {
 		assertNotNull(result);
 		assertPathValid(result.getResultPath(), startNodeId, destinationNodeId);
-		assertTrue(isValueInInterval(0.95 * timeOptimum,
+		assertTrue(isValueInInterval(0.5 * timeOptimum,
 				result.getTravelTimeOfResultPath(), 2.0 * timeOptimum));
 	}
 
